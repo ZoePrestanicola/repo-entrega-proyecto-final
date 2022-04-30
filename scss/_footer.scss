@@ -1,0 +1,35 @@
+
+footer .section1{
+	padding: 5px 5px;
+	display: flex;
+	justify-content: flex-end;
+	background-color:map-get($map:$paleta,$key:'dos');
+	
+}
+
+
+	
+	
+footer .section2{
+	width: 100%;
+	font-size: 1.5rem;
+	background-color: map-get($map:$paleta,$key:'uno');
+	text-align: center;
+
+
+	a{
+		color: black;
+
+		&:hover{
+			font-weight: 800
+		}
+	}
+
+}
+
+.logoIg{
+	width: 30px;
+}
+
+
+

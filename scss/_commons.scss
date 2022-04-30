@@ -1,0 +1,35 @@
+
+//mixins
+
+@mixin p-m($padding, $margin){
+	padding:$padding;
+	margin: $margin;
+}// @include p-m(20px, 10px); 
+
+@mixin maintext($size, $line, $color){
+	font-size: $size;
+	line-height: $line;
+	color: $color;
+	font-family: 'Raleway', sans-serif;
+}// @include maintext(1.2em, 1.4em, grey);
+
+
+
+//map
+$paleta:(
+	'uno':rgba(216, 245, 162, 0.5),
+	'dos':#c0eb75,
+	'tres':#e9fac8,
+	
+	)//color: map-get($map:$paleta,$key:'uno')
+;
+
+	
+
+
+//FONT
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+
+$fontMain:'Raleway', sans-serif;
+
+

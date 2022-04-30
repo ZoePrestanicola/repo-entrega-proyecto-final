@@ -5,97 +5,121 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Crea tu cuenta en AZO.MATE</title>
 	<link rel="shortcut icon" href="../img/logo.jpeg">
-	<link rel="stylesheet" href="../css/style.css">
+	<meta name="description" content="Crea tu cuenta en AZO.MATE para tener una mejor experiencia de compra en nuestra web">
+	<meta name="keywords" content="azo.mate, crear cuenta, crea tu cuenta, contacto">
+
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- MI CSS -->
+	<link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body  class="alpha">
-	<nav class="nav1">
-		<div class="buscar">
-			<input type="text" placeholder="buscar" required>
-		<div>
-		<div>
-			<ol>
-				<li>
-				<a href="crearcuenta.html">Crear cuenta</a>
-				</li>
-				<li>/</li>
-		        <li>
-			    <a href="iniciarsesion.html">Iniciar sesión</a>
-		        </li>
-		    </ol>
-		</div>
-	</nav>
+	<div id="contenedorIndex">
+		<nav class="nav1">
+			<div>
+				<ol>
+					<li>
+					<a href="crearcuenta.html">Crear cuenta</a>
+					</li>
+					<li>|</li>
+			        <li>
+				    <a href="iniciarsesion.html">Iniciar sesión</a>
+			        </li>
+			    </ol>
+			</div>
+		</nav>
+		<!-- incia nav2 -->
+	    <nav class="navbar navbar-expand-lg navbar-light nav2" id="nav2Index">
+	      	<div class="container-fluid">
+		        <a class="navbar-brand" href="../index.html">
+		          	<img src="../img/logo.jpeg" alt="Logo de AZOMATE" class=" img-thumbnail imgLogoAzomate">
+		        </a>
+		        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		        <span class="navbar-toggler-icon"></span>
+		        </button>
 
-	<nav class="nav2">		
-		<a href="index.html">
-			<img class="imgLogoAzomate" src="../img/logo.jpeg" alt="Logo de AZOMATE">
-		</a>
-        <ol>    
-			<li><a href="../index.html">Inicio</a></li>
-			<li><a href="productos.html">Productos</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
-		</ol>
-	</nav>
-	<main>
-        <section>
-			<article>
-				<h2>CREAR CUENTA</h2>
-			</article>
+		        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		          	<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+		            	<li class="nav-item">
+		              		<a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+		            	</li>
+		            
+		            	<li class="nav-item dropdown">
+		              		<a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos
+		              		</a>
+		            	<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			                <li><a class="dropdown-item" href="productos.html">Mates Personalizados</a></li>
+			                <li><a class="dropdown-item" href="productos.html">Mates Ilustrados</a></li>
+		            	</ul>
+		            	</li>
+		            	<li class="nav-item">
+		              	<a class="nav-link" href="contacto.html">Contacto</a>
+		            	</li>
+		          	</ul>          
+		        </div>
+	    	</div>
+	    </nav>
+	    <!-- ends nav2 -->
+		<main>
+			<div class="container-fluid" id="divContacto">
+				<h2 class="text-center">CREAR CUENTA</h2>
 
-			<article>				
-				<!-- inicia form -->
-				<form action="PROGRAMACIÓN" method="post">
-					<fieldset>
-					<label for="nombre">Nombre y apellido</label>
-					<input type="text" placeholder="Nombre y apellido" name="nombre" id="nombre">
+				<div class="row py-3 w-50">
+					<!--abre form -->
+					<form class=" ">
+					  	<div class="mb-3">
+					    	<label for="nombre" class="form-label">Nombre y Apellido</label>
+					    	<input type="text" placeholder="Nombre y apellido" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					  	</div>
+					  	<div class="mb-3">
+					    	<label for="email" class="form-label">Email</label>
+					    	<input type="email" placeholder="email@email.com" class="form-control" id="exampleInputPassword1">
+					  	</div>
+					  	<div class="mb-3">
+					 	   <label for="telefono" class="form-label">Teléfono</label>
+					    	<input type="tel" class="form-control" id="exampleInputPassword1">
+					  	</div>
+					  	<div class="mb-3">
+							<label for="contraseña" class="form-label">Contraseña</label>
+							<input type="text" class="form-control" id="contraseña">
+					   	</div>
+					   	<div class="mb-3">
+							<label for="confirmar contraseña" class="form-label">Confirmar contraseña</label>
+							<input type="text" class="form-control" id="confirmar contraseña">
+					   	</div>
 
-                    <br><br>
-
-					<label for="email">Email</label>
-					<input type="email" placeholder="email@email.com" name="email" id="email">
-
-					<br><br>
-
-					<label for="telefono">Teléfono (opcional)</label>
-					<input type="tel" placeholder="1168702546" name="telefono" id="telefono">
-
-					<br><br>
-
-                    <label for="contraseña">Contraseña</label>
-                    <input type="text" name="contraseña" id="contraseña">
-
-					<br><br>
-
-					  <label for="confirmar contraseña">Confirmar contraseña</label>
-                    <input type="text" name="confirmar contraseña" id="confirmar contraseña">
-
-                    <br><br>
-
-					<input type="submit" value="CREAR CUENTA">
-					</fieldset>
-				</form>
-				<!--cierra form -->
-			</article>
-			<article>
+						<div class="d-flex">
+						  	<button type="submit" class="btn-form btn w-30 btn-outline-secondary button"><a href="error.html">Crear cuenta</a></button>	
+						</div>
+					</form>
+					<!--cierra form -->
+				</div>
 				<p>¿Ya tienes cuenta? <a href="iniciarsesion.html">Iniciar Sesión</a></p>
-			</article>
-		</section>
-	</main>
-	<footer>
-    	<section class=" section1 bgVerde">
-    		<h3>Redes Sociales</h3>
-    	    <a  href="https://www.instagram.com/azo.mate/?hl=es-la" target="_blank">
-    	    	<img class="logoIg" src="../img/instagramlogo.png" alt="">
-    	    </a>
-        </section>
+			</div>  								
+		</main>
 
-        <section class="section2">
-        	<h3>Contacto</h3>
-    	    <img src="" alt="">
-    	    <a href="mailto:azomatepersonalizado@gmail.com">azomatepersonalizado@gmail.com</a>
-    	
-    	    <img src="" alt="">
-    	    <a href="https://www.instagram.com/azo.mate/?hl=es-la" target="_blank">@azo.mate</a>
-        </section>
-    </footer>
+	 	<footer>
+			<section class="section1">
+		    	<a  href="https://www.instagram.com/azo.mate/?hl=es-la" target="_blank">
+		    		<img class="logoIg" src="../img/instagram.png" alt="instragam azo.mate">
+		    	</a>
+			    <a class="ms-3" href="mailto:azomatepersonalizado@gmail.com" target="_blank">
+			   	   	<img class="logoIg" src="../img/sobre.png" alt="mail azo.mate">
+			   	</a>
+			</section>
+
+			<section class="section2 d-flex flex-column">
+			    <h3>Contacto</h3>
+			    	    
+			    <a href="mailto:azomatepersonalizado@gmail.com">azomatepersonalizado@gmail.com</a>
+			    	
+			    <a href="https://www.instagram.com/azo.mate/?hl=es-la" target="_blank">@azo.mate</a>
+		    </section>
+		</footer>
+	</div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+//variables globales
+$background: rgba(216, 245, 162, 0.5);
+$bg-2: #c0eb75;
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
 
 *{
@@ -160,7 +164,7 @@ footer a:hover{
 	
 	.main h2{
 		font-size: 1.5rem;
-		background-color: #c0eb75;
+		background-color: map-get($map:$paleta,$key:'dos');
 		width: 70%;
 		margin: 20px auto;
 		border-style: solid;

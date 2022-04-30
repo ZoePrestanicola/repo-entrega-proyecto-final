@@ -1,0 +1,180 @@
+
+
+*{
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%
+}
+
+
+body{
+	background-color: map-get($map:$paleta,$key:'uno');
+	line-height: 1.6;
+}
+
+
+
+ol, ul{
+    list-style: none
+}
+
+p{
+	@include maintext(1.5em, 1.4em, black);
+
+}
+
+a{
+	text-decoration: none;
+}
+
+.textCenter{
+	text-align: center
+}
+
+
+/*MAIN*/
+.main .section1, .section2 {
+	background-color: white;
+	width: 70%;
+	@include p-m(20px 20px, 0 auto);
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+	.main .section1 figure, .section2 figure{
+		/*width: 50%;*/
+		font-size: 1.5rem;
+		text-align: center;
+		padding-bottom: 10px;
+
+		figcaption{
+			font-size: 2rem;
+			font-weight: 700;
+		}
+
+		p{
+			font-size: 1.7rem
+		}
+		
+	}
+
+
+.main .section1 figure img, .section2 figure img{
+	width: 100px;
+}
+
+.main h2{
+		font-size: 2rem;
+		background-color: #c0eb75;
+		width: 70%;
+		margin: 20px auto;
+		border-style: solid;
+		border-color: #5c940d;
+		border-width: 2px;
+		border-radius: 5px;
+}	
+
+.main .section3{
+	text-align: center;
+	margin: 10px auto;
+
+	h3{
+	font-size: 1.5rem;
+	}
+
+}	
+
+//CONTACTO
+#divContacto{
+
+	h2{
+		font-weight: 590;
+ 		font-size: 3rem;	
+	}
+
+	h2{
+		font-weight: 590;
+	 	font-size: 3rem;
+	}
+
+	a{
+		color: black;
+		font-weight: 600;
+		font-size: 1.5rem;
+	}
+
+}
+
+
+//FORMS
+form{
+	font-size: 1.5rem;
+}
+
+//BTNS
+.btn-form{
+	@extend form;
+}
+
+
+//ANIMACIONES
+
+@keyframes alpha{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+
+.alpha{
+	animation-name: alpha;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+
+.button:hover{
+	background-color:map-get($map:$paleta,$key:'dos');
+	color: black;
+	font-weight: 800
+}
+
+//PAGINA ERROR
+#bodyError{
+	background-color: map-get($map:$paleta,$key:'dos');
+	height: 300px;
+		
+		main{
+			display: flex;	
+			flex-direction: column;
+			align-items: center;
+			padding-top: 150px;
+		}
+
+		h1{
+			font-weight: 700;
+			font-size: 3rem;
+		}
+
+		img{
+			width: 300px;
+		}
+
+		p{
+			font-size: 2rem;
+		}
+
+		a{
+			color: black;
+			font-size: 2.5rem;
+			font-weight: 700;
+			text-decoration: underline;
+
+		}
+}
+
+ .btn a{
+ 	text-decoration: none;
+ }
